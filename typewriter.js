@@ -1,5 +1,8 @@
+const sentence = "hello there from lighthouse labs";
+
+const print = sentence =>{
+for (const char of sentence) {
+  let letters = sentence[char];
 setTimeout(() => {
-  const sentence = "hello there from lighthouse labs";
-  for (const char of sentence) {
-    process.stdout.write(char);
-}}, 1000)
+    process.stdout.write(letters);
+}, 50)}
